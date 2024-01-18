@@ -3,7 +3,6 @@
   text-align: center;
   flex-direction: column; */
   /* display: block; */
-
 }
 .appContainer {
   display: flex;
@@ -11,16 +10,15 @@
 .headerContainer {
   display: flex;
   align-items: center;
-
-
 }
-.weather-info{
+.weather-info {
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -30,11 +28,11 @@ table, th, td {
 .grayBackground {
   background-color: grey;
 }
-.day-wise-weather{
+.day-wise-weather {
   margin: 2%;
 }
 h2 {
-  color:lightsalmon
+  color: lightsalmon;
 }
 .searchButton {
   background-color: lightsalmon;
@@ -43,7 +41,6 @@ h2 {
   font-size: large;
 }
 .questionMark {
-
 }
 .column {
   float: left;
@@ -52,9 +49,9 @@ h2 {
 }
 
 .left {
- width: 300px;
- margin-left: 100px;
-} 
+  width: 300px;
+  margin-left: 100px;
+}
 .right {
   width: 25%;
 }
@@ -81,11 +78,30 @@ h2 {
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .weather-info {
+    flex-direction: column;
+  }
+  .headerContainer {
+    flex-direction: column;
+  }
+  .searchButton {
+    margin-left: 15%
+  }
 }

@@ -51,6 +51,7 @@ function App() {
         }
         setWeatherForcast(forcastData);
         setWeatherForcastLoader(false);
+        alert('Data fetched Successfully !')
       })
       .catch((err) => {
         setWeatherForcastLoader(false);
