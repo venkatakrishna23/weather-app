@@ -1,0 +1,91 @@
+.App {
+  /* display: flex;
+  text-align: center;
+  flex-direction: column; */
+  /* display: block; */
+
+}
+.appContainer {
+  display: flex;
+}
+.headerContainer {
+  display: flex;
+  align-items: center;
+
+
+}
+.weather-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.dateHeader {
+  background-color: red;
+}
+.grayBackground {
+  background-color: grey;
+}
+.day-wise-weather{
+  margin: 2%;
+}
+h2 {
+  color:lightsalmon
+}
+.searchButton {
+  background-color: lightsalmon;
+  color: white;
+  width: 100px;
+  font-size: large;
+}
+.questionMark {
+
+}
+.column {
+  float: left;
+  padding: 10px;
+  height: 50px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+ width: 300px;
+ margin-left: 100px;
+} 
+.right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  clear: both;
+} */
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 10px;
+  height: 10px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
